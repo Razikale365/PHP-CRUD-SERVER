@@ -71,3 +71,10 @@ return $pessoa;
             
 function voltarIndex(){
     header("Location:index.php");}
+
+    
+function formatoData($data){
+            $array = explode("-", $data);
+            $novaData = $array[2]."/".$array[1]."/".$array[0];
+            return $novaData;
+        }

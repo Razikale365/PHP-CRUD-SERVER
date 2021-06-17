@@ -55,15 +55,11 @@ $grupo= SelectAllPessoa();
                 
              <?php
         // put your code here
-        function formatoData($data){
-            $array = explode("-", $data);
-            $novaData = $array[2]."/".$array[1]."/".$array[0];
-            return $novaData;
-        }
+      
         ?>   
             </tbody>
         </table>
-
+        <a href="gerarPDF.php" target="_blank">Gerar Relatório PDF</a>
 
 
     </body>
